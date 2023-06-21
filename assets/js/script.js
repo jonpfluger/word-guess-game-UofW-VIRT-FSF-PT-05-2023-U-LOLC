@@ -36,6 +36,7 @@ function onKeydown(event) {
   // check if letter pressed is in the answer string
     // if yes
       // reveal letter in word-blanks
+  
 }
 
 function tick() {
@@ -53,9 +54,6 @@ function tick() {
           // decrement timer count
 }
 
-// Event Listeners
-  // start - startRound()
-  // reset
-  // keydown - onKeydown
-
 startButton.addEventListener("click", startRound)
+document.body.addEventListener("keydown", onKeydown)
+// TODO: reset event listener
