@@ -7,14 +7,25 @@ var winEl = document.querySelector(".win")
 var lossesEl = document.querySelector(".lose")
 
 // list of words
-var words = ["Jellyfish", "pancakes", "callback", "bacon", "porcupine"]
+var words = ["jellyfish", "pancakes", "callback", "bacon", "porcupine"]
 var userGuesses = []
 var answer
 
 function startRound() {
   // start timer
+
+
   // pick a random word
-  // set word-blanks to have _'s
+  var randomIdx = Math.floor(Math.random() * words.length)
+  var randomWord = words[randomIdx]
+
+  // set word-blanks innertext to have _'s for each letter in random word
+  var blanks = ""
+  for (var i = 0; i < randomWord.length; i++) {
+    blanks += "_"
+    
+  }
+
 }
 
 function onKeydown(event) {
