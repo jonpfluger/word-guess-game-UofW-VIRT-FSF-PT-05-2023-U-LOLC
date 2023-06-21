@@ -23,9 +23,8 @@ function startRound() {
   var blanks = ""
   for (var i = 0; i < randomWord.length; i++) {
     blanks += "_"
-    
   }
-
+  wordBlanksEl.innerText = blanks.split("").join(" ")
 }
 
 function onKeydown(event) {
